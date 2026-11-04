@@ -1,5 +1,5 @@
 class Person {
-    // Определение свойств через конструктор
+    // Визначення властивостей через конструктор
     constructor(readonly id: number, private _name: string, private _surname: string, private _age: number) {
     }
     public set name(name: string) {
@@ -22,19 +22,19 @@ class Person {
     }
 
     public print(): void {
-        console.log("Имя: " + this._name);
-        console.log("Фамилия: " + this._surname);
-        console.log("Возраст: " + this._age);
+        console.log("Ім'я: " + this._name);
+        console.log("Прізвище: " + this._surname);
+        console.log("Вік: " + this._age);
     }
 }
 
-let user: Person = new Person(1, "Андрей", "Кузнецов", 30);
+let user: Person = new Person(1, "Андрій", "Кузнєцов", 30);
 user.print();
-//user.id = 2; // Ошибка компиляции: свойство доступно только для чтения
-user.name = "Петр";
+//user.id = 2; // Помилка компіляції: властивість доступна лише для читання
+user.name = "Петро";
 user.surname = "Петров";
 user.age = 24;
-console.log("Идентификатор: " + user.id);
-console.log("Имя: " + user.name);
-console.log("Фамилия: " + user.surname);
-console.log("Возраст: " + user.age);
+console.log("Ідентифікатор: " + user.id);
+console.log("Ім'я: " + user.name);
+console.log("Прізвище: " + user.surname);
+console.log("Вік: " + user.age);
